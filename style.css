@@ -22,7 +22,10 @@ body {
     font-family: 'Roboto', Arial, sans-serif;
 }
 
-/* hero */
+
+
+/* #region HERO */
+
 .hero {
     background-color: var(--color-dark);
     padding: 2rem calc(100vw*1/7);
@@ -36,13 +39,12 @@ body {
     justify-content: space-between;
 }
 
-/* hero__header */
-.header__logo {
+.hero__header-logo {
     font-size: 2.4rem;
     color: var(--color-white);
 }
 
-.header__navigation-links {
+.hero__nav-links {
     display: flex;
     gap: 2.4rem;
     list-style-type: none;
@@ -54,7 +56,6 @@ body {
     }
 }
 
-/* hero__content */
 .hero__content {
     display: flex;
     gap: 7.2rem;
@@ -69,18 +70,18 @@ body {
     justify-content: space-between;
 }
 
-.content__main-text {
+.hero__main-text {
     font-size: 4.8rem;
     color: var(--color-white);
     font-weight: 900;
 }
 
-.content__secondary-text {
+.hero__secondary-text {
     font-size: 1.8rem;
     color: var(--color-white-muted);
 }
 
-.content__button {
+.hero__button {
     background-color: var(--color-blue);
     color: var(--color-white);
     align-self: flex-start;
@@ -89,7 +90,7 @@ body {
     border: 0;
 }
 
-.content__image-container {
+.hero__image-container {
     flex-shrink: 0;
     color: var(--color-white-muted);
     /* width: 600px;
@@ -105,18 +106,20 @@ body {
     }
 }
 
+/* #endregion HERO */
 
-/* information */
+
+
+/* #region INFO */
 
 .info {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: var(--color-white);
-    height: calc(var(--height-of-sections)*0.75);
+    height: calc(var(--height-of-sections)*0.8);
 }
 
-/* info__header */
 .info__header {
     font-size: 3.6rem;
     color: var(--color-dark);
@@ -124,30 +127,30 @@ body {
     margin: 5rem;
 }
 
-/* info__cards */
-.info__cards {
+.info__card-container {
     display: flex;
     gap: 5rem;
     list-style-type: none;
     justify-content: space-around;
 }
 
-/* card */
-.cards__card-item {
+
+.info__card-item {
     text-align: center;
     width: 15rem;
 }
 
-/* card-item */
-.card-item__image {
+.info__image {
     width: 15rem;
     height: 15rem;
     border: 3px solid var(--color-blue);
     border-radius: 2rem;
 }
 
-.card-item__text {
+.info__text {
     color: gray;
     padding: 0.5rem;
     font-size: 1.5rem;
 }
+
+/* #endregion INFO */
